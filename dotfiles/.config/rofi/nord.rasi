@@ -1,0 +1,15 @@
+* {
+    separatorcolor:     transparent;
+    border-color:       transparent;
+    polarnight1: #2e3440af;
+    polarnight2: #3b4252ff;
+    polarnight3: #434c5eff;
+    polarnight4: #4c566aff;
+    snowstorm1: #d8dee9ff;
+    snowstorm2: #e5e9f0ff;
+    snowstorm3: #eceff4ff;
+    frost1: #8fbcbbff;
+    frost2: #88c0d0ff;
+    frost3: #81a1c1ff;
+    frost4: #5e81acff;
+}

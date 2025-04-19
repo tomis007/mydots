@@ -1,0 +1,7 @@
+[general]
+import = [
+	"~/.config/alacritty/themes/solarized_dark.toml"
+]
+
+[window]
+dynamic_title = false

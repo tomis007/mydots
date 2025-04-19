@@ -1,0 +1,33 @@
+* {
+    opacity: 0.95;
+}
+
+.monitor {
+    background: #2e3440;
+}
+
+.monitor_active {
+    border: var(--border-size) solid darkslategray;
+}
+
+.index {
+    background: #e5e9f0;
+    border: var(--border-size) solid #e5e9f0;
+}
+
+.workspace {
+    background: #4c566a;
+}
+
+.client-image {
+    background: #d8dee0;
+}
+
+.client {
+    background: #eceff4;
+}
+
+.client_active {
+    border: 4px solid #88c0d0ff;
+}
+
