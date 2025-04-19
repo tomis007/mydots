@@ -13,6 +13,6 @@ echo "install it"
 
 
 echo "setup greetd"
-sudo mkdir -p /etc/greetd/
-sudo cp ./etc/greetd/config.toml /etc/greetd/
-sudo systemctl enable --now greetd.service
+# sudo mkdir -p /etc/greetd/
+# sudo cp ./etc/greetd/config.toml /etc/greetd/
+# sudo systemctl enable --now greetd.service
