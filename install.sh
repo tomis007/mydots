@@ -1,18 +1,19 @@
 #!/usr/bin/env bash
 
 echo "install dependencies"
-sudo pacman -S tuigreet greetd vim tmux rofi-wayland hyprland hypridle hyprlock alacritty waybar ttf-jetbrains-mono ttf-font-awesome papirus-icon-theme base-devel rust uwsm
+sudo pacman -S greetd greetd-tuigreet vim tmux rofi-wayland hyprland hypridle hyprlock alacritty waybar ttf-jetbrains-mono ttf-font-awesome papirus-icon-theme base-devel rust uwsm gtk4-layer-shell ttf-firacode-nerd
 
 echo "setup dotfiles"
-cp -r dotfiles/* $HOME
+cp -r ./dotfiles/.* $HOME
 
 echo "build hyprswitch"
-git clone https://aur.archlinux.org/hyprswitch.git && cd hyprswitch
+mkdir -p $HOME/AUR/hyprswitch && pushd $_
+git clone https://aur.archlinux.org/hyprswitch.git .
 makepkg
-echo "install it"
-
+sudo pacman -U hyprswitch-3.3.2-1-any.pkg.tar.zst
+popd
 
 echo "setup greetd"
-# sudo mkdir -p /etc/greetd/
-# sudo cp ./etc/greetd/config.toml /etc/greetd/
-# sudo systemctl enable --now greetd.service
+sudo mkdir -p /etc/greetd/
+sudo cp ./etc/greetd/config.toml /etc/greetd/
+sudo systemctl enable greetd.service
