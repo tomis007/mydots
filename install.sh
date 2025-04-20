@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo "install dependencies"
-sudo pacman -S greetd greetd-tuigreet vim tmux rofi-wayland hyprland hypridle hyprlock alacritty waybar ttf-jetbrains-mono ttf-font-awesome papirus-icon-theme base-devel rust uwsm gtk4-layer-shell ttf-firacode-nerd nautilus
+sudo pacman -S greetd greetd-tuigreet vim tmux rofi-wayland hyprland hypridle hyprpaper hyprlock alacritty waybar ttf-jetbrains-mono ttf-font-awesome papirus-icon-theme base-devel rust uwsm gtk4-layer-shell ttf-firacode-nerd nautilus
 
 echo "setup dotfiles"
 cp -r ./dotfiles/.* $HOME
