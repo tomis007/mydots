@@ -1,0 +1,27 @@
+[global]
+monitor = 0
+frame_width = 3
+frame_color = "#81a1c1ff"
+separator_color = frame
+highlight = "#81a1c1"
+background = "#2e3440df"
+foreground = "#eceff4ff"
+corner_radius = 10
+progress_bar_corner_radius = 5
+offset = (15, 25)
+gap_size = 5
+format = "<b>󰁕 %a</b>\n%s\n<i>%b</i>"
+font = "Monospace 10"
+
+width = (300,300)
+height = (0,100)
+
+[urgency_low]
+default_icon = "~/.config/dunst/icons/arch.svg"
+
+[urgency_normal]
+default_icon = "~/.config/dunst/icons/arch.svg"
+
+[urgency_critical]
+frame_color = "#bf616aff"
+default_icon = "~/.config/dunst/icons/arch.svg"
