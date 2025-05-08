@@ -1,33 +1,43 @@
-* {
-    opacity: 0.95;
-}
-
 .monitor {
-    background: #2e3440;
+    opacity: 0.85;
+    padding: 2px;
+  
+    border-radius: 0.5em;
+    background-color: #2e3440ff;
+    border: unset;
 }
 
 .monitor_active {
-    border: var(--border-size) solid darkslategray;
+    border: unset;
+    background: transparent;
 }
 
 .index {
-    background: #e5e9f0;
-    border: var(--border-size) solid #e5e9f0;
+    background: transparent;
+    border: unset;
+    color: #b48ead;
 }
 
 .workspace {
-    background: #4c566a;
+    background: #3b4252;
+    font-size: 10;
+    border: unset;
 }
 
 .client-image {
-    background: #d8dee0;
+    background: transparent;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .client {
-    background: #eceff4;
+    background: #4c566a;
 }
 
 .client_active {
-    border: 4px solid #88c0d0ff;
+    border: #88c0d0;
+    background: #5e81ac;
+    border-radius: 5px;
+    padding: 2px;
 }
 
