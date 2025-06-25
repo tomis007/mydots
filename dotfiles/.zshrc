@@ -10,6 +10,10 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 # keybindings emacs
 bindkey -e
+export VISUAL=vim
+autoload -z edit-command-line
+zle -N edit-command-line
+bindkey "^X^E" edit-command-line
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 
@@ -26,5 +30,10 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_find_no_dups
 
-export FZF_ALT_C_OPTS="--walker-skip .git,node_modules,target --preview 'tree -C {}'"
-source <(fzf --zsh)
+export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
+fzf --zsh &> /dev/null
+if [ $? -eq 0 ]; then
+    source <(fzf --zsh)
+else
+    source /usr/share/doc/fzf/examples/key-bindings.zsh
+fi

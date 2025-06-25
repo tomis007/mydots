@@ -1,0 +1,32 @@
+window:
+  decorations: none
+  dynamic_padding: true
+
+colors:
+  primary:
+    background: '0x242933'
+    foreground: '0xBBBDAF'
+
+    normal:
+      black: '0x191C1D'
+      red: '0xBD6062'
+      green: '0xA3D6A9'
+      yellow: '0xF0DFAF'
+      blue: '0x8FB4D8'
+      magenta: '0xC7A9D9'
+      cyan: '0xB6D7A8'
+      white: '0xBDC5BD'
+
+    bright:
+      black: '0x727C7C'
+      red: '0xD18FAF'
+      green: '0xB7CEB0'
+      yellow: '0xBCBCBC'
+      blue: '0xE0CF9F'
+      magenta: '0xC7A9D9'
+      cyan: '0xBBDA97'
+      white: '0xBDC5BD'
+
+    cursor:
+      text: '0x000000'
+      background: '0xF0DFAF'
