@@ -7,3 +7,4 @@ font-family = "Hack"
 cursor-style = underline
 cursor-style-blink = true
 shell-integration-features = false
+title = "Ghostty"
