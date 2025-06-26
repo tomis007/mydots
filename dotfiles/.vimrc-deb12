@@ -12,14 +12,16 @@ let mapleader = "," " map leader to comma
 
 " Custom Functions
 " Paste contents of script in TemplatesPath into buffer with <leader>t
-let g:TemplatesPath='/path/to/templates/'
+source /usr/share/doc/fzf/examples/fzf.vim
+
+let g:TemplatesPath='/home/user/templates/'
 function! PasteFile(file)
 	    execute ':r '.g:TemplatesPath.a:file
 endfunction
 command! PasteTemplate call fzf#run({
 	    \  'source': 'ls '.g:TemplatesPath,
 	    \  'sink':    function('PasteFile'),
-	    \  'options': ['-m', '--pointer=>', '--preview', 'cat {}']})
+	    \  'options': ['-m', '--pointer=>', '--preview', 'cat '.g:TemplatesPath.'{}']})
 
 nnoremap <leader>t :PasteTemplate<CR>
 

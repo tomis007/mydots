@@ -29,5 +29,6 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_find_no_dups
 
+# FZF Integration
 export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
-source <(fzf --zsh)
+source /usr/share/doc/fzf/examples/key-bindings.zsh
