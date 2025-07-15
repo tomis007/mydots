@@ -37,6 +37,7 @@ setopt hist_ignore_space
 setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_find_no_dups
+setopt ignore_eof
 
 export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
 source <(fzf --zsh)
