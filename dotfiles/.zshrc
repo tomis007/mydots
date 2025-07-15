@@ -3,9 +3,18 @@ autoload -U compinit; compinit
 PS1='[%n@%m %1~]$ '
 
 # ls colors
-alias ls='ls --color'
-eval $(dircolors -b)
+if [[ "$(uname)" == "Darwin" ]]; then
+    export HOMEBREW_NO_ANALYTICS=1
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+    eval $(gdircolors)
+    alias ls='ls --color'
+else
+    eval $(dircolors)
+    alias ls='ls --color=auto'
+fi
+
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+
 
 # keybindings emacs
 bindkey -e
@@ -31,3 +40,5 @@ setopt hist_find_no_dups
 
 export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
 source <(fzf --zsh)
+export EDITOR=vim
+

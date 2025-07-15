@@ -8,20 +8,3 @@ set relativenumber
 
 let mapleader = "," " map leader to comma
 
-
-
-" Custom Functions
-" Paste contents of script in TemplatesPath into buffer with <leader>t
-let g:TemplatesPath='/path/to/templates/'
-function! PasteFile(file)
-	    execute ':r '.g:TemplatesPath.a:file
-endfunction
-command! PasteTemplate call fzf#run({
-	    \  'source': 'ls '.g:TemplatesPath,
-	    \  'sink':    function('PasteFile'),
-	    \  'options': ['-m', '--pointer=>', '--preview', 'cat {}']})
-
-nnoremap <leader>t :PasteTemplate<CR>
-
-" Insert timestamp in new line above current line with <leader> s
-nnoremap <leader>s m'O<C-R>="[".strftime('%Y-%m-%d %H:%M')."]"<CR><Esc>``
