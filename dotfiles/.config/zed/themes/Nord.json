@@ -1,10 +1,10 @@
 {
   "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
-  "name": "NordVSCode",
-  "author": "me",
+  "name": "Nord",
+  "author": "test",
   "themes": [
     { 
-      "name": "NordVSC",
+      "name": "Nord",
       "appearance": "dark",
       "style": {
         "background.appearance": "opaque",
@@ -21,14 +21,14 @@
         "element.background": "#88c0d0ee",
         "element.hover": "#3b4252",
         "element.active": null,
-        "element.selected": "#88c0d0",
+        "element.selected": "#81A1C1",
         "element.disabled": null,
         "element.selection_background": null,
         "drop_target.background": "#88c0d099",
         "ghost_element.background": null,
         "ghost_element.hover": "#3b4252",
         "ghost_element.active": null,
-        "ghost_element.selected": "#88c0d0",
+        "ghost_element.selected": "#4C566A",
         "ghost_element.disabled": null,
         "text": "#d8dee9",
         "text.muted": "#d8dee966",
