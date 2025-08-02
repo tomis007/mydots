@@ -22,7 +22,6 @@
         "tooltip-format": "{title}",
         "on-click": "activate",
         "on-click-middle": "close",
-	"icon-theme": "Papirus",
         "app_ids-mapping": {
             "firefoxdeveloperedition": "firefox-developer-edition"
         },
@@ -34,7 +33,6 @@
     // Hyprland Window
     "hyprland/window": {
         "rewrite": {
-            "(.*)Alacritty": "Alacritty",
             "(.*)Mozilla Firefox": "Firefox"
         },
 	"icon": true,
@@ -80,31 +78,5 @@
             "cpu",
             "memory"
         ]
-    },
-
-    // pulse audio
-    "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-bluetooth": "{volume}% {icon}",
-        "format-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "default": ["", "", ""]
-        },
-        "scroll-step": 1,
-        "on-click": "pavucontrol",
-        "ignored-sinks": ["Easy Effects Sink"]
-    },
-
-    "battery": {
-        "bat": "BAT2",
-        "interval": 60,
-        "states": {
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{capacity}% {icon}",
-        "format-icons": ["", "", "", "", ""],
-        "max-length": 25
     }
 }
