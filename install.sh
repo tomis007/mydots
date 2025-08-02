@@ -17,7 +17,7 @@ popd
 echo "setup greetd"
 sudo mkdir -p /etc/greetd/
 sudo cp ./etc/greetd/config.toml /etc/greetd/
-sudo systemctl enable greetd.service
+sudo systemctl enable --now greetd.service
 
 # start polkit
 systemctl --user enable --now hyprpolkitagent.service
