@@ -14,3 +14,5 @@ sudo systemctl enable --now greetd.service
 
 # start polkit
 systemctl --user enable --now hyprpolkitagent.service
+
+sudo systemctl disable --now avahi-daemon
