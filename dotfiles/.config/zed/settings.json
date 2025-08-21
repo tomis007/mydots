@@ -8,6 +8,7 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "vim_mode": true,
+  "disable_ai": true,
   "telemetry": {
     "metrics": false,
     "diagnostics": false
