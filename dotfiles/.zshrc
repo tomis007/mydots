@@ -24,6 +24,7 @@ else
 fi
 
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu select
 
 # if [ -n "${SSH_YAYAUTH_SOCK}" ]; then
 #     export SSH_AUTH_SOCK_MACOS=${SSH_AUTH_SOCK}
@@ -53,6 +54,7 @@ export EDITOR=vim
 export KIND_EXPERIMENTAL_ROOTLESS=true
 export KIND_EXPERIMENTAL_PROVIDER=podman
 export PATH=$PATH:~/go/bin
+
 
 
 # set options
